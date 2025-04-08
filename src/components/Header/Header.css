@@ -1,0 +1,32 @@
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #4E87D0;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.nav-link:hover {
+color: #4E87D0;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.nav-link.active {
+color: #4E87D0;
+}
+.nav-link.active::after {
+width: 100%;
+}
+.lang-switch{
+  color: #4E87D0;
+}
+.lang-switch:hover {
+  background-color: #d5e3f5;
+}
+.menu-btn{
+  background-color: #4E87D0;
+}
