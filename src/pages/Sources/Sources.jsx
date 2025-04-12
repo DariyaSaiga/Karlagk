@@ -1,7 +1,9 @@
+import React from 'react';
+import News from './News.jsx';
 function Sources() {
     return (
       <div>
-          <h1>Главная</h1>
+          <News/>
       </div>
     )
 };
