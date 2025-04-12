@@ -1,6 +1,6 @@
 import React from 'react';
-import HeroImage from '../../../assets/HeroImage.png';
-import ArrowIcon from '../../../assets/icons/Icon_arrow.svg?react';
+import HeroImage from '../../assets/HeroImage.png';
+import ArrowIcon from '../../assets/icons/Icon_arrow.svg?react';
 
 function Hero() {
   return (

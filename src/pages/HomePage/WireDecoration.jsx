@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Wire4 from '../../../assets/Vector.svg?react';
-import Wire2 from '../../../assets/Vector-1.svg?react';
-import Wire3 from '../../../assets/Vector-2.svg?react';
-import Wire1 from '../../../assets/Vector-3.svg?react';
+import Wire4 from '../../assets/Vector.svg?react';
+import Wire2 from '../../assets/Vector-1.svg?react';
+import Wire3 from '../../assets/Vector-2.svg?react';
+import Wire1 from '../../assets/Vector-3.svg?react';
 
 function WireDecoration() {
   return (

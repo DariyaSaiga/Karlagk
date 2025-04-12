@@ -1,9 +1,19 @@
+import React from 'react';
+
+import Hero from './HeroBlog.jsx';
+import BlogText from './BlogText.jsx';
+import Articles from './Articles.jsx';
+
 function BlogPost() {
-    return (
-      <div>
-          <h1>Главная</h1>
-      </div>
-    )
+  return (
+    <div>
+        <Hero />
+        <BlogText/>
+        <Articles/>
+    </div>
+  )
 };
-  
+
 export default BlogPost;
+
+
