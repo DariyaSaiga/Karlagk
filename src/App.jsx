@@ -11,10 +11,14 @@ import ArcheologyMap from './pages/ArcheologyMap/ArcheologyMap.jsx';
 import BlogAndPost from './pages/BlogPost/BlogPost';
 import Sources from './pages/Sources/Sources.jsx';
 import Contact from './pages/Contact/Contact.jsx';
+import SeeMorePage from './pages/SeeMorePage/NewsPage.jsx';
+import ScrollToTop from './pages/SeeMorePage/ScrollToTop';
+
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -24,6 +28,7 @@ function App() {
         <Route path="/blog" element={<BlogAndPost />} />
         <Route path="/sources" element={<Sources />} />
         <Route path="/contacts" element={<Contact />} />
+        <Route path="/more" element={<SeeMorePage />} />
       </Routes>
       <Footer />
     </Router>

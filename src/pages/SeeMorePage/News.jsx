@@ -34,7 +34,7 @@ const BlogPage = () => {
       </div>
 
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {[...Array(6)].map((_, index) => {
+        {[...Array(9)].map((_, index) => {
           const article = articles[index % articles.length];
           return (
             <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden relative">

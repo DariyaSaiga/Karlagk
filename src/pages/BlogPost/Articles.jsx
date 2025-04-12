@@ -1,6 +1,7 @@
 import Image from '../../assets/Card_IMG.png';
 import Arrow_45 from '../../assets/icons/Icon_arrow_45.svg?react';
 import ArrowIcon from '../../assets/icons/Icon_arrow_right.svg?react';
+import { Link } from 'react-router-dom';
 
 const RelatedArticles = () => {
   const articles = [
@@ -26,31 +27,35 @@ const RelatedArticles = () => {
   ];
 
   return (
-    <section className='p-10 hidden lg:block'>
-      <div className="relative flex flex-col gap-8">
-        <div className="flex bg-white rounded-2xl justify-between items-center p-8">
-          <h2 className="text-2xl font-bold">Схожие статьи</h2>
-          <button className='flex items-center gap-2 text-[#4E87D0] rounded-md hover:bg-[#cee0f7] transition-colors duration-300'>Посмотреть все <ArrowIcon className='items-center'/></button>
+<section className="p-10 hidden lg:block">
+  <div className="relative flex flex-col gap-8">
+    <div className="flex bg-white rounded-2xl justify-between items-center p-8">
+      <h2 className="text-2xl font-bold">Схожие статьи</h2>
+      <Link
+        to="/more"
+        className="flex items-center gap-2 text-[#4E87D0] rounded-md hover:bg-[#cee0f7] transition-colors duration-300"
+      >
+        Посмотреть все <ArrowIcon className="items-center" />
+      </Link>
+    </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {articles.map((article, index) => (
+        <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden relative">
+          <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
+          <div className="p-8">
+            <h3 className="text-md font-semibold mb-2">{article.title}</h3>
+            <p className="text-sm text-gray-600">{article.description}</p>
+          </div>
+          <div className="absolute top-2 right-2">
+            <button className="w-8 h-8 flex items-center justify-center bg-[#EEF4FC] rounded-md  shadow hover:shadow-md transition">
+              <Arrow_45 />
+            </button>
+          </div>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {articles.map((article, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden relative">
-              <img src={article.image} alt={article.title} className="w-full h-48 object-cover" />
-              <div className="p-8">
-                <h3 className="text-md font-semibold mb-2">{article.title}</h3>
-                <p className="text-sm text-gray-600">{article.description}</p>
-              </div>
-              <div className="absolute top-2 right-2">
-                <button className="w-8 h-8 flex items-center justify-center bg-[#EEF4FC] rounded-md  shadow hover:shadow-md transition">
-                  <Arrow_45/>
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
   );
 };
 
