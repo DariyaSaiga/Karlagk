@@ -9,7 +9,7 @@ function About(){
   const [isOpen, setIsOpen] = useState(false);
 
   return(
-      <section className='relative p-4 md:p-8 lg:m-4 md:m-8 bg-white lg:rounded-2xl'>
+      <section className='relative p-4 lg:p-8 lg:m-8 m-0 bg-white lg:rounded-2xl'>
         <div className='flex flex-col lg:flex-row justify-between gap-10 lg:gap-16 my-4'>
           {/*About Content*/}
           <div className='flex flex-col z-1 items-start justify-between w-full lg:w-[45%] gap-6'>

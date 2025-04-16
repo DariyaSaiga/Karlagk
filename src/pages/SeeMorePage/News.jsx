@@ -44,7 +44,7 @@ const BlogPage = () => {
                 <p className="text-sm text-gray-400">{article.description}</p>
               </div>
               <div className="absolute top-2 right-2">
-                <button className="w-8 h-8 flex items-center justify-center bg-[#EEF4FC] rounded-md shadow hover:shadow-md transition">
+                <button className="w-8 h-8 flex items-center justify-center bg-[#EEF4FC] rounded-md shadow hover:shadow-md active:scale-95 transition transform duration-150">
                   <Arrow_45 />
                 </button>
               </div>

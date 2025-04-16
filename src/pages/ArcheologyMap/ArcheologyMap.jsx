@@ -1,7 +1,9 @@
+import React from 'react';
+import Archeology from './Archeology.jsx'
 function ArcheologyMap() {
   return (
     <div>
-        <h1>Главная</h1>
+          <Archeology/>
     </div>
   )
 };

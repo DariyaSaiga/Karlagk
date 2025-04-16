@@ -14,7 +14,7 @@ function Hero() {
           <h1 className="text-[#4E87D0] text-4xl font-bold leading-tight">Echoes of the Steppe:</h1>
           <h1 className="text-4xl m-0 font-semibold leading-tight">Kazakhstan’s Gulag History</h1>
           <p className='text-base text-gray-600 mt-2'>Откройте для себя историю ГУЛАГа в Казахстане — его печально известные лагеря, жизнь заключенных и долгосрочные последствия советских репрессий.<span className="text-gray-400"> Изучите подробные отчеты, архивные материалы и исторические сведения, которые проливают свет на это трагическое прошлое.</span></p>
-          <button className="hidden lg:inline-flex items-center gap-2 px-6 py-3 mt-5 text-white bg-[#4E87D0] rounded-lg font-medium text-base transition hover:bg-[#254194]">Начать исследование <ArrowIcon className="w-[18px] h-[18px]" /> </button>
+          <button className="hidden lg:inline-flex items-center gap-2 px-6 py-3 mt-5 text-white bg-[#4E87D0] rounded-lg font-medium text-base active:scale-95 transition transform duration-150 hover:bg-[#254194]">Начать исследование <ArrowIcon className="w-[18px] h-[18px]" /> </button>
         </div>
         <p className='hidden lg:flex text-gray-500 text-sm mt-auto'>Создание, использование и восприятие тюрем в бывшем Советском Союзе</p>
       </div>

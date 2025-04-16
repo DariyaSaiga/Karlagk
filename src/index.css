@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* активная точка */
+.swiper-pagination-bullet-active {
+  background-color: #4E87D0 !important;
+}
+
+/* обычные точки */
+.swiper-pagination-bullet {
+  background-color: #A7A9AB;
+  opacity: 1;
+}

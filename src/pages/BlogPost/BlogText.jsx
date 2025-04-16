@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from '../../assets/blogandpost/Rich_text_image.png';
-import Image2 from '../../assets/blogandpost/Rich_text_image2.png';
+import Image from '../../assets/Rich_text_image.png';
+import Image2 from '../../assets/Rich_text_image2.png';
 
 function About() {
     return (
@@ -58,11 +58,11 @@ function About() {
                                 <div className='flex flex-col gap-6'>
                                     <p className='text-lg text-gray-600'>
                                         Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. 
-                                        In aliquet pellentesque aenean hac vestibulum turpis mi<span className='underline'>bibendum diam. </span>   Tempor integer aliquam in vitae malesuada fringilla.
+                                        In aliquet pellentesque aenean hac vestibulum turpis <span className='underline'>mibibendum diam</span>. Tempor integer aliquam in vitae malesuada fringilla.
                                     </p>
                                     <p className='text-lg text-gray-600 '>
                                         Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. 
-                                        Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat<span className='underline'> auctor aliquam. </span>  Risus, volutpat vulputate posuere purus sit congue convallis aliquet. 
+                                        Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat <span className='underline'>auctor aliquam.</span>Risus, volutpat vulputate posuere purus sit congue convallis aliquet. 
                                         Arcu id augue ut feugiat donec porttitor neque. 
                                         Mauris, neque ultricies eu vestibulum, bibendum quam lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor. 
                                     </p>

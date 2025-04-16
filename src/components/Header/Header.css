@@ -9,9 +9,6 @@
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
-.nav-link:hover {
-color: #4E87D0;
-}
 .nav-link:hover::after {
 width: 100%;
 }
@@ -20,13 +17,4 @@ color: #4E87D0;
 }
 .nav-link.active::after {
 width: 100%;
-}
-.lang-switch{
-  color: #4E87D0;
-}
-.lang-switch:hover {
-  background-color: #d5e3f5;
-}
-.menu-btn{
-  background-color: #4E87D0;
 }
